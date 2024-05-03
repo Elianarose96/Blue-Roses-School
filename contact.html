@@ -1,0 +1,81 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Blue Roses School</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="contat.css">
+  <style>
+    body{
+        background-image: url();
+    }
+    .input{
+      display: grid;
+      text-align: left;
+      justify-content: left;
+      border-color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">contact us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>   
+  </nav>
+  </header>
+  <main>
+    <part id="contact-info">
+      <h2>Contact Information</h2>
+      <p>Feel free to reach out to us via phone, email, or by visiting our school offices.</p>
+      <ul>
+        <li><strong>Address:</strong> Salama Estate, Thika, Kenya</li>
+        <li><strong>Phone:</strong> 0721688891</li>
+        <li><strong>Email:</strong> waninimugo97@gmail.com</li>
+      </ul>
+    </part>
+    <part id="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="submit_contact_form.php" method="POST">
+        <div class="input">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="2" required></textarea>
+        <button style="color: blueviolet;border-color: black;" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
